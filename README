@@ -1,0 +1,14 @@
+Simple POC for maybe grabbing the request and piping it through
+a base64 decoder.
+
+Uses fileupload for streaming:
+http://commons.apache.org/fileupload/streaming.html
+
+And codec for decoding:
+http://commons.apache.org/codec/
+
+Theoretically, doing this prevents several copies of the same
+data in memory.  At the least, it is an interesting avenue.
+
+Install by putting the grab64 folder in the webroot.
+
